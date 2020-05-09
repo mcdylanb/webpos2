@@ -1,0 +1,14 @@
+#-*- mode: org -*-
+# orgmode
+* Day ONE
+** Exporting Components use
+    #+BEGIN_SRC js
+   export default function functionname(){
+   }
+    #+END_SRC
+
+** importing components
+*** js file should start with capital first letter
+ #+begin_src js
+import SimpleTable from './TableContainer'
+ #+end_src
