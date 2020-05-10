@@ -12,3 +12,8 @@
  #+begin_src js
 import SimpleTable from './TableContainer'
  #+end_src
+* Day Two
+** Started creating a form
+** added some style
+*** cant find a way to make it center
+*** TODO center the form and its contents
