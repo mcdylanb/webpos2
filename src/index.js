@@ -23,12 +23,18 @@ const dummy_data = [
 
 ]
 
-const App = () => {
+const App = ({ dummy }) => {
   return (
    <div >
+     <h1> Products </h1>
+     <ul>
+       {dummy.map((prod) =>
 
+                  <li>{prod.product}</li>
+                 )}
+     </ul>
   </div>
   )
 }
 
-ReactDOM.render(<App />, document.getElementById('root'))
+ReactDOM.render(<App dummy = {dummy_data}/>, document.getElementById('root'))
