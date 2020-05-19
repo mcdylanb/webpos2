@@ -1,7 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import Product from './components/Product'
-
+import App from './App'
 
 const dummy_data = [
   {
@@ -22,20 +21,6 @@ const dummy_data = [
     rating: 4,
     price: 1483.74
   },
-
 ]
-
-const App = ({ dummy }) => {
-  return (
-   <div >
-     <h1> Products </h1>
-     <ul>
-       {dummy.map((prod) =>
-                  <Product key={prod.id} name={ prod.product } rating={ prod.rating } price={ prod.price }/>
-                 )}
-     </ul>
-  </div>
-  )
-}
 
 ReactDOM.render(<App dummy = {dummy_data}/>, document.getElementById('root'))
