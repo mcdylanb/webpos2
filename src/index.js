@@ -22,6 +22,17 @@ const dummy_data = [
   },
 
 ]
+const Product = ({ name, rating, price}) => {
+  return (
+    <ul>
+    <li>{name}</li>
+      <ul>
+        <li>Rating: {rating}</li>
+        <li>Price: ${price}</li>
+      </ul>
+    </ul>
+  )
+}
 
 const App = ({ dummy }) => {
   return (
@@ -29,11 +40,7 @@ const App = ({ dummy }) => {
      <h1> Products </h1>
      <ul>
        {dummy.map((prod) =>
-
-                  <li key={prod.id}>
-                    {prod.product}
-                  </li>
-
+                  <Product key={prod.id} name={ prod.product } rating={ prod.rating } price={ prod.price }/>
                  )}
      </ul>
   </div>
