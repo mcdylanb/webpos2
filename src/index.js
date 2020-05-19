@@ -30,7 +30,10 @@ const App = ({ dummy }) => {
      <ul>
        {dummy.map((prod) =>
 
-                  <li>{prod.product}</li>
+                  <li key={prod.id}>
+                    {prod.product}
+                  </li>
+
                  )}
      </ul>
   </div>
