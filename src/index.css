@@ -1,12 +1,24 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #8c1c13;
 }
 
-.example {
-  backround-color: red;
+.item {
+  border: solid 1px black;
+  margin: 2rem;
+  width: 15rem;
+  padding: 0 0 1rem 0;
+  background-color: #e7d7c1;
+}
+
+.product-name {
+  list-style-type: none;
+  padding: 5px;
+  background-color: #bf4342;
+  color: white;
 }
